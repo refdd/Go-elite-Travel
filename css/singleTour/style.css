@@ -1,0 +1,586 @@
+.carousel-caption.contentHeader {
+  position: absolute;
+  top: 156px;
+  left: 30px;
+}
+.carousel-caption.contentHeader p {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+  color: #ffffff;
+}
+.infoTour {
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  width: 100%;
+  color: #ffffff;
+}
+.infoTour ul li span {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 14px;
+  color: #ffffff;
+}
+.infoTour ul li:nth-of-type(3) i {
+  color: #ffe234;
+}
+.carousel-item img {
+  height: 300px;
+}
+.tapsTour {
+  background: #e5e5e5;
+  padding: 8px !important;
+}
+.layoutviews {
+  display: none;
+}
+.layoutviews.active {
+  display: block;
+}
+.tapsTour li {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  color: #3d3d3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px 5px !important;
+}
+.tapsTour li.active {
+  background: #ffffff;
+}
+.video_container {
+  height: 315px;
+}
+.video_container video {
+  object-fit: cover;
+}
+.content_overview {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: justify;
+  color: #3d3d3d;
+}
+.header_included {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+.included_section li span,
+.exincluded_section li span {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #3d3d3d;
+}
+.included_section li i {
+  font-size: 16px;
+  color: #69e230;
+}
+.exincluded_section li i {
+  font-size: 16px;
+  color: #ff5449;
+}
+.inquireSection {
+  background: #f5f5f5;
+}
+.headerInquery {
+  background: #01a8c3;
+  padding: 20px;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+.code_selected {
+  width: 90px;
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.inputCode {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.startDate,
+.endDate {
+  width: 48%;
+}
+.startDate,
+.endDate,
+.textArea {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.startDate input,
+.endDate input {
+  padding: 11px 0px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  width: 100%;
+}
+.startDate input::placeholder,
+.endDate input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #c0c0c0;
+  padding-left: 8px;
+}
+.startDate input:focus,
+.endDate input:focus {
+  outline: none;
+}
+.inputCounter {
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  padding: 8px;
+  cursor: pointer;
+}
+.inputCounter span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #c0c0c0;
+  cursor: pointer;
+}
+.counterbox {
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  height: 0;
+  opacity: 0;
+  transition: ease-in-out 0.2s;
+}
+.counterbox.active {
+  height: auto;
+  opacity: 1;
+}
+.counterbox .counter {
+  padding: 15px;
+}
+.counterContainer img,
+.counterContainer span {
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.textCounter {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #3d3d3d;
+}
+.counterContainer span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #3d3d3d;
+}
+.counterContainer img:hover {
+  transform: scale(0.9);
+}
+.buttoncounter {
+  background: #01a8c3;
+  border-radius: 10px;
+}
+.buttoncounter:hover {
+  transform: scale(0.9);
+}
+.buttoncounter button {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+.contextFormInauire {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #7a7a7a;
+}
+.form-group textarea::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #c0c0c0;
+}
+.bottonInqueryFrom {
+  background: #01a8c3;
+  border-radius: 10px;
+}
+.bottonInqueryFrom:hover {
+  transform: scale(0.9);
+}
+.bottonInqueryFrom button {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+.headerItinerary .content span {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+.headerItinerary .content div {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 10px;
+  letter-spacing: 0.5px;
+  color: #3d3d3d;
+}
+.stepItinerary {
+  background: #01a8c3;
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+.itineraryDay {
+  background: #f5f5f5 !important;
+  border: 1px solid #e5e5e5 !important;
+  border-radius: 8px !important;
+}
+.itineraryDay .headerday {
+  font-family: "Josefin Sans" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  line-height: 10px !important;
+  color: #3d3d3d !important;
+}
+.headerAccommmedation {
+  background: #f5f5f5;
+  border-width: 0.432384px;
+  border-style: solid;
+  border-color: #dedede;
+  border-radius: 6.48577px 6.48577px 0px 0px;
+  height: 56px;
+  padding: 0 12.9715px;
+  gap: 1px;
+}
+.headerAccommmedation .line {
+  width: 1px;
+  height: 100%;
+  background-color: #dedede;
+}
+.headerAccommmedation .line {
+  width: 1px;
+  height: 100%;
+  background-color: #dedede;
+}
+.contentAccommmedation {
+  padding: 0 12.9715px;
+}
+.contentAccommmedation div:nth-of-type(1) span:nth-of-type(1) {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.9715px;
+  line-height: 14px;
+  text-align: center;
+  color: #3d3d3d;
+}
+.contentAccommmedation div:nth-of-type(1) span:nth-of-type(2) {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.64769px;
+  line-height: 9px;
+  text-align: center;
+  color: #7a7a7a;
+}
+.tabletext {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.9715px;
+  line-height: 13px;
+  color: #3d3d3d;
+  text-align: center;
+}
+.roomType span {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.3772px;
+  line-height: 10px;
+  color: #3d3d3d;
+}
+.seconsText,
+.priseAccommmedation {
+  height: 150px;
+}
+.seconsText span:nth-of-type(1) {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.9715px;
+  line-height: 14px;
+  text-align: center;
+  color: #3d3d3d;
+}
+thead tr th:nth-of-type(1) {
+  background: #01a8c3;
+  color: #ffffff;
+}
+thead tr {
+  background: #f5f5f5;
+}
+.seconsText span:nth-of-type(2) {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8.64769px;
+  line-height: 9px;
+  text-align: center;
+  color: #7a7a7a;
+}
+.priseAccommmedation span {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20.7545px;
+  line-height: 21px;
+  text-align: center;
+  color: #3d3d3d;
+}
+.headerInfo {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #3d3d3d;
+}
+.accordion-item.mt-4.rounded-3 {
+  background: #fff;
+}
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+.formRview {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+  background: #F5F5F5;
+  border-radius: 10px; 
+}
+.formRview .header {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3D3D3D;
+}
+.rateText{
+    font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 14px;
+color: #3D3D3D;
+}
+.rateStar{
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px; 
+}
+/* rate star */
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #FFE234;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+/* end rate star */
+.ReviewTitle{
+    font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 14px;
+color: #3D3D3D;
+
+}
+.recommend{
+    font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+color: #3D3D3D;
+}
+.formRview  .buttomSubmit{
+    background: #01A8C3;
+    border-radius: 5px;
+    padding: 8px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    margin:  0 auto;
+    cursor: pointer;
+}
+.formRview  .buttomSubmit:hover{
+   transform: scale(0.9);
+}
+.formRview  .buttomSubmit button{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+/* responsev singel tour */
+@media only screen and (min-width: 786px) {
+  .carousel-item img {
+    height: 500px;
+  }
+  .carousel-caption.contentHeader {
+    top: auto;
+    bottom: 61px;
+    left: 10px;
+  }
+  .carousel-caption.contentHeader p {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 25px;
+    text-align: left;
+    color: #ffffff;
+  }
+  .infoTour ul li span {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 14px;
+    color: #ffffff;
+  }
+  .tapsTour {
+    background: #e5e5e5;
+    gap: 25px !important;
+  }
+  .tapsTour li {
+    font-size: 23px;
+    padding: 25px 13px !important;
+  }
+  .content_overview {
+    ont-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #3d3d3d;
+  }
+  .included_section li span,
+  .exincluded_section li span {
+    font-size: 18px;
+  }
+  .table > :not(caption) > * > * {
+    padding: 1rem 1rem !important;
+  }
+  .seconsText span:nth-of-type(1) {
+    font-size: 18.9715px;
+  }
+  .seconsText span:nth-of-type(2) {
+    font-size: 14.64769px;
+  }
+  .tabletext {
+    font-size: 16.9715px;
+    line-height: 23px;
+  }
+  .roomType span {
+    font-size: 14.3772px;
+  }
+  .priseAccommmedation span {
+    font-size: 24.7545px;
+  }
+  .formRview {
+    padding: 22px;
+}
+}

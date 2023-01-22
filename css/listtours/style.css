@@ -1,0 +1,202 @@
+
+.searchSection{
+    display: flex;
+    align-items: center;
+   gap: 20px;
+}
+.searchSection .filter ,  .searchSection .sortBy {
+    background: #F5F5F5;
+     border: 1px solid #DEDEDE;
+      border-radius: 8px;
+      padding: 16px;
+} 
+ .filter .filterBox , .sortBy .sortBox{
+    padding: 9px 10px;
+background: #FFFFFF;
+border: 1px solid #DEDEDE;
+border-radius: 8px;
+cursor: pointer;
+ }
+ 
+ .content-search{
+ font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 14px;
+color: #3D3D3D;
+cursor: pointer;
+
+ }
+ .searchPlaceHolder{
+ font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+color: #B7B7B7;
+cursor: pointer;
+
+ }
+ .positonBox{
+    position: absolute;
+    top: -45px;
+ }
+.imageCard{
+    overflow: hidden;
+    width: 42%;
+}
+ .imageCard img{
+    max-width: 100%;
+    width: 211px;
+    height: 142px;
+ }
+ .cardList {
+    overflow: hidden;
+    background: #FFFFFF;
+    border-radius:10.1028px 10.1028px ;
+ }
+ .cardList p{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10.1028px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #3D3D3D;
+ }
+ .titelcard div:nth-of-type(1) {
+    font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 12.1233px;
+line-height: 12px;
+display: flex;
+align-items: center;
+color: #3D3D3D;
+ } 
+ .titelcard div:nth-of-type(2) {
+    font-size: 17px;
+     color: #FFE234;
+ } 
+ .duration{
+    font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12.1233px;
+line-height: 12px;
+display: flex;
+align-items: center;
+color: #3D3D3D;
+ }
+
+ .priseListCard span:nth-of-type(1){
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10.1028px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #3D3D3D;
+ }
+ .priseListCard span:nth-of-type(2){
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20.2056px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #3D3D3D;
+ }
+ .viewButton{
+    display: flex;
+align-items: center;
+justify-content: center;
+padding: 10px;
+gap: 10px;
+width:90px;
+background: #01A8C3;
+border-radius: 5px;
+transition: ease-in 0.4s;
+ }
+ .viewButton:hover {
+    transform: scale(0.9);
+ }
+ .viewButton button{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.1233px;
+    line-height: 12px;
+    text-align: center;
+    color: #FFFFFF;
+ }
+.contentChackBox{
+    font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+letter-spacing: 0.03em;
+color: #3D3D3D;
+
+}
+.headerFilter{
+    font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+color: #3D3D3D;
+}
+@media only screen and (min-width: 786px){
+    .landingPageContent p {
+        font-family: "Josefin Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 61px;
+        color: #ffffff;
+        width: 750px;
+    }
+    .searchSection{
+       display: none;
+    }
+    .imageCard{
+        overflow: hidden;
+        width: 42%;
+    }
+     .imageCard img{
+        max-width: 100%;
+        width: 372px;
+        height: 175px;
+     }
+     .titelcard div:nth-of-type(1) {
+        font-size: 17.1233px;
+    }
+    .titelcard div:nth-of-type(2) {
+        font-size: 21px;
+    }
+    .duration {
+        font-size: 17.1233px;
+    }
+    .cardList p {
+        font-size: 15.1028px;
+    }
+    .priseListCard span:nth-of-type(1) {
+        font-size: 15.1028px;
+    }
+    .priseListCard span:nth-of-type(2) {
+        font-size: 23.2056px;
+        margin-top: 5px;
+    }
+    .viewButton {
+        padding: 11px;
+        width: 143px;
+    }
+}
