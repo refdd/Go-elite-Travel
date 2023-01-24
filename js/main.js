@@ -4,9 +4,32 @@ const menu = document.querySelector(".menu_container")
 const cardContainer = document.querySelector(".cardContainer")
 const inputCounter = document.querySelector(".inputCounter")
 const counterbox = document.querySelector(".counterbox")
+const filterbutton  = document.querySelector(".filterBox")
+const box_Sort  = document.querySelector(".box_Sort")
+const sortbutton  = document.querySelector(".sortBox")
+const filter_Box   = document.querySelector(".filter_Box ")
+const counderFilter   = document.querySelector(".counderFilter ")
 const taptour = document.querySelectorAll(".taptour")
 const layoutviews = document.querySelectorAll(".layoutviews")
+const arrowFiltter = document.querySelector(".filterBox div .fa-arrow-down")
+const arrowSort= document.querySelector(".sortBox div .fa-arrow-down")
+const buttonDuration = document.querySelector(".buttonDuration")
+
 // event 
+buttonDuration.addEventListener("click",()=>{
+  counderFilter.classList.toggle("active")
+})
+// open and close  filter box and Sort box 
+filterbutton.addEventListener("click",()=>{
+  filter_Box.classList.toggle("active")
+  arrowFiltter.classList.toggle("rotate")
+})
+
+sortbutton.addEventListener("click",()=>{
+  box_Sort.classList.toggle("active")
+  arrowSort.classList.toggle("rotate")
+})
+// 
 menuIcon.addEventListener("click", ()=>{
 // remove menu icon and add  cancel icon 
 const  icon = document.getElementById("menu")
@@ -55,3 +78,4 @@ const handleClick = (direction) => {
     inputCounter.addEventListener("click", ()=>{
       counterbox.classList.toggle('active');
     })
+

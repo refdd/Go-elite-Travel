@@ -1,202 +1,363 @@
-
-.searchSection{
-    display: flex;
-    align-items: center;
-   gap: 20px;
+.searchSection {
+  display: flex;
+  gap: 20px;
 }
-.searchSection .filter ,  .searchSection .sortBy {
-    background: #F5F5F5;
-     border: 1px solid #DEDEDE;
-      border-radius: 8px;
-      padding: 16px;
-} 
- .filter .filterBox , .sortBy .sortBox{
-    padding: 9px 10px;
-background: #FFFFFF;
-border: 1px solid #DEDEDE;
-border-radius: 8px;
-cursor: pointer;
- }
- 
- .content-search{
- font-family: 'Josefin Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 14px;
-color: #3D3D3D;
-cursor: pointer;
+.contentfilterChackBox {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #3d3d3d;
+}
+.searchSection .filter,
+.searchSection .sortBy {
+  background: #f5f5f5;
+  border: 1px solid #dedede;
+  border-radius: 8px;
+  padding: 16px;
+  height: fit-content;
+}
+.box_Sort {
+  display: none;
+}
+.box_Sort.active {
+  display: flex;
+}
+.filter_Box {
+  display: none;
+}
+.filter_Box.active {
+  display: block;
+}
+.filterBox div .fa-arrow-down {
+  transition: ease 0.2s;
+}
+.filterBox div .fa-arrow-down.rotate {
+  transform: rotate(181deg);
+}
+.filter .filterBox,
+.sortBy .sortBox {
+  padding: 9px 10px;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
- }
- .searchPlaceHolder{
- font-family: 'Josefin Sans';
+.content-search {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+  color: #3d3d3d;
+  cursor: pointer;
+}
+.searchPlaceHolder {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #b7b7b7;
+  cursor: pointer;
+}
+.positonBox {
+  position: absolute;
+  top: -45px;
+}
+.imageCard {
+  overflow: hidden;
+  width: 42%;
+}
+.imageCard img {
+  max-width: 100%;
+  width: 211px;
+  height: 142px;
+}
+.cardList {
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 10.1028px 10.1028px;
+}
+.cardList p {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10.1028px;
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #3d3d3d;
+}
+.titelcard div:nth-of-type(1) {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.1233px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  color: #3d3d3d;
+}
+.titelcard div:nth-of-type(2) {
+  font-size: 17px;
+  color: #ffe234;
+}
+.duration {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.1233px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  color: #3d3d3d;
+}
+
+.priseListCard span:nth-of-type(1) {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10.1028px;
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #3d3d3d;
+}
+.filter_search {
+  background: #f5f5f5;
+  border: 1px solid #dedede;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  display: none;
+}
+
+
+.priseListCard span:nth-of-type(2) {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20.2056px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #3d3d3d;
+}
+.viewButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+  width: 90px;
+  background: #01a8c3;
+  border-radius: 5px;
+  transition: ease-in 0.4s;
+}
+.viewButton:hover {
+  transform: scale(0.9);
+}
+.viewButton button {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.1233px;
+  line-height: 12px;
+  text-align: center;
+  color: #ffffff;
+}
+.contentChackBox {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #3d3d3d;
+}
+.headerFilter {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #3d3d3d;
+}
+@media only screen and (min-width: 786px) {
+  .landingPageContent p {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 61px;
+    color: #ffffff;
+    width: 750px;
+  }
+  .searchSection {
+    display: none;
+  }
+  .imageCard {
+    overflow: hidden;
+    width: 42%;
+  }
+  .imageCard img {
+    max-width: 100%;
+    width: 372px;
+    height: 175px;
+  }
+  .titelcard div:nth-of-type(1) {
+    font-size: 17.1233px;
+  }
+  .titelcard div:nth-of-type(2) {
+    font-size: 21px;
+  }
+  .duration {
+    font-size: 17.1233px;
+  }
+  .cardList p {
+    font-size: 15.1028px;
+  }
+  .priseListCard span:nth-of-type(1) {
+    font-size: 15.1028px;
+  }
+  .priseListCard span:nth-of-type(2) {
+    font-size: 23.2056px;
+    margin-top: 5px;
+  }
+  .viewButton {
+    padding: 11px;
+    width: 143px;
+  }
+  .filter_search {
+    background: #f5f5f5;
+    border: 1px solid #dedede;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    position: relative;
+  }
+  .filter_search .boxFilter_search {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    padding: 9px 10px;
+    height: 90px;
+}
+.filter_search i{
+    font-size: 21px;
+}
+.filter_search .contentbox span:nth-of-type(1){
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #3D3D3D;
+    text-align: center;
+}
+.filter_search .contentbox span:nth-of-type(2){
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #B7B7B7;
+}
+.filter_search .contentbox input {
+    padding: 11px 0px;
+    border-radius: 8px;
+    background: #ffffff;
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+}
+.filter_search .contentbox input:focus {
+  outline: none;
+}
+.buttonDuration{
+    font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 14px;
-line-height: 16px;
+line-height: 21px;
 color: #B7B7B7;
 cursor: pointer;
-
- }
- .positonBox{
-    position: absolute;
-    top: -45px;
- }
-.imageCard{
-    overflow: hidden;
-    width: 42%;
 }
- .imageCard img{
-    max-width: 100%;
-    width: 211px;
-    height: 142px;
- }
- .cardList {
-    overflow: hidden;
+.buttonDuration:focus{
+border: 0.5px solid #3d3d3d  ;
+}
+.counderFilter {
+    bottom: 0;
+    position: absolute;
     background: #FFFFFF;
-    border-radius:10.1028px 10.1028px ;
- }
- .cardList p{
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 10.1028px;
-    line-height: 10px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: #3D3D3D;
- }
- .titelcard div:nth-of-type(1) {
-    font-family: 'Josefin Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 12.1233px;
-line-height: 12px;
-display: flex;
-align-items: center;
-color: #3D3D3D;
- } 
- .titelcard div:nth-of-type(2) {
-    font-size: 17px;
-     color: #FFE234;
- } 
- .duration{
-    font-family: 'Josefin Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 12.1233px;
-line-height: 12px;
-display: flex;
-align-items: center;
-color: #3D3D3D;
- }
-
- .priseListCard span:nth-of-type(1){
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 10.1028px;
-    line-height: 10px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: #3D3D3D;
- }
- .priseListCard span:nth-of-type(2){
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20.2056px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    color: #3D3D3D;
- }
- .viewButton{
-    display: flex;
-align-items: center;
-justify-content: center;
-padding: 10px;
-gap: 10px;
-width:90px;
-background: #01A8C3;
-border-radius: 5px;
-transition: ease-in 0.4s;
- }
- .viewButton:hover {
-    transform: scale(0.9);
- }
- .viewButton button{
-    font-family: 'Josefin Sans';
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+    padding: 20px;
+    bottom: -250px;
+    width: 300px;
+    transition: ease 0.3s;
+    display: none;
+}
+.counderFilter.active {
+    display: block;
+}
+.textCounter {
+    font-family: "Josefin Sans";
     font-style: normal;
     font-weight: 400;
-    font-size: 12.1233px;
-    line-height: 12px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #3d3d3d;
+  }
+  .counterContainer img,
+.counterContainer span {
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.counterContainer span {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #3d3d3d;
+  }
+  .counterContainer img:hover {
+    transform: scale(0.9);
+  }
+  .buttoncounter {
+    background: #01a8c3;
+    border-radius: 10px;
+  }
+  .buttoncounter:hover {
+    transform: scale(0.9);
+  }
+  .buttoncounter button {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
     text-align: center;
-    color: #FFFFFF;
- }
-.contentChackBox{
-    font-family: 'Josefin Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 20px;
-letter-spacing: 0.03em;
-color: #3D3D3D;
-
+    color: #ffffff;
+  }
+  .buttonSearch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 24px !important;
+    width: 130px;
+    background: #01A8C3;
+    border-radius: 5px;
 }
-.headerFilter{
-    font-family: 'Josefin Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 30px;
-color: #3D3D3D;
+.positonBox{
+    top: -94px;  
 }
-@media only screen and (min-width: 786px){
-    .landingPageContent p {
-        font-family: "Josefin Sans";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 60px;
-        line-height: 61px;
-        color: #ffffff;
-        width: 750px;
-    }
-    .searchSection{
-       display: none;
-    }
-    .imageCard{
-        overflow: hidden;
-        width: 42%;
-    }
-     .imageCard img{
-        max-width: 100%;
-        width: 372px;
-        height: 175px;
-     }
-     .titelcard div:nth-of-type(1) {
-        font-size: 17.1233px;
-    }
-    .titelcard div:nth-of-type(2) {
-        font-size: 21px;
-    }
-    .duration {
-        font-size: 17.1233px;
-    }
-    .cardList p {
-        font-size: 15.1028px;
-    }
-    .priseListCard span:nth-of-type(1) {
-        font-size: 15.1028px;
-    }
-    .priseListCard span:nth-of-type(2) {
-        font-size: 23.2056px;
-        margin-top: 5px;
-    }
-    .viewButton {
-        padding: 11px;
-        width: 143px;
-    }
 }
