@@ -74,7 +74,7 @@
 .imageCard img {
   max-width: 100%;
   width: 211px;
-  height: 142px;
+  height: 157px;
 }
 .cardList {
   overflow: hidden;
@@ -136,7 +136,6 @@
   padding: 20px;
   display: none;
 }
-
 
 .priseListCard span:nth-of-type(2) {
   font-family: "Josefin Sans";
@@ -243,71 +242,71 @@
     position: relative;
   }
   .filter_search .boxFilter_search {
-    background: #FFFFFF;
-    border: 1px solid #C4C4C4;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
     border-radius: 10px;
     padding: 9px 10px;
     height: 90px;
-}
-.filter_search i{
+  }
+  .filter_search i {
     font-size: 21px;
-}
-.filter_search .contentbox span:nth-of-type(1){
-    font-family: 'Josefin Sans';
+  }
+  .filter_search .contentbox span:nth-of-type(1) {
+    font-family: "Josefin Sans";
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
-    color: #3D3D3D;
+    color: #3d3d3d;
     text-align: center;
-}
-.filter_search .contentbox span:nth-of-type(2){
-    font-family: 'Josefin Sans';
+  }
+  .filter_search .contentbox span:nth-of-type(2) {
+    font-family: "Josefin Sans";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 28px;
-    color: #B7B7B7;
-}
-.filter_search .contentbox input {
+    color: #b7b7b7;
+  }
+  .filter_search .contentbox input {
     padding: 11px 0px;
     border-radius: 8px;
     background: #ffffff;
     border: 0;
     border-radius: 10px;
     width: 100%;
-}
-.filter_search .contentbox input:focus {
-  outline: none;
-}
-.buttonDuration{
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 21px;
-color: #B7B7B7;
-cursor: pointer;
-}
-.buttonDuration:focus{
-border: 0.5px solid #3d3d3d  ;
-}
-.counderFilter {
+  }
+  .filter_search .contentbox input:focus {
+    outline: none;
+  }
+  .buttonDuration {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #b7b7b7;
+    cursor: pointer;
+  }
+  .buttonDuration:focus {
+    border: 0.5px solid #3d3d3d;
+  }
+  .counderFilter {
     bottom: 0;
     position: absolute;
-    background: #FFFFFF;
-    border: 1px solid #DEDEDE;
+    background: #ffffff;
+    border: 1px solid #dedede;
     border-radius: 10px;
     padding: 20px;
     bottom: -250px;
     width: 300px;
     transition: ease 0.3s;
     display: none;
-}
-.counderFilter.active {
+  }
+  .counderFilter.active {
     display: block;
-}
-.textCounter {
+  }
+  .textCounter {
     font-family: "Josefin Sans";
     font-style: normal;
     font-weight: 400;
@@ -316,11 +315,11 @@ border: 0.5px solid #3d3d3d  ;
     color: #3d3d3d;
   }
   .counterContainer img,
-.counterContainer span {
-  cursor: pointer;
-  transition: ease-in-out 0.2s;
-}
-.counterContainer span {
+  .counterContainer span {
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+  }
+  .counterContainer span {
     font-family: "Josefin Sans";
     font-style: normal;
     font-weight: 400;
@@ -354,10 +353,10 @@ border: 0.5px solid #3d3d3d  ;
     align-items: center;
     padding: 19px 24px !important;
     width: 130px;
-    background: #01A8C3;
+    background: #01a8c3;
     border-radius: 5px;
-}
-.positonBox{
-    top: -94px;  
-}
+  }
+  .positonBox {
+    top: -94px;
+  }
 }

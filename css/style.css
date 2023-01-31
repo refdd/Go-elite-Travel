@@ -22,15 +22,15 @@ button {
   border: none !important;
   background-color: inherit !important;
 }
-ul{
+ul {
   padding-left: 0 !important;
 }
 li {
   list-style: none !important;
 }
 body {
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
 /* nav bar */
@@ -249,7 +249,7 @@ body {
   color: #7a7a7a;
 }
 /* cards */
-.sectionTour{
+.sectionTour {
   position: relative;
 }
 .leftArrow {
@@ -262,7 +262,7 @@ body {
   cursor: pointer;
 }
 .leftArrow:hover {
-transform: scale(0.8);
+  transform: scale(0.8);
 }
 .rightArrow {
   position: absolute;
@@ -274,15 +274,14 @@ transform: scale(0.8);
   cursor: pointer;
 }
 .rightArrow:hover {
-transform: scale(0.8);
+  transform: scale(0.8);
 }
-.cardContainer{
+.cardContainer {
   display: flex;
   align-items: center;
   gap: 20px;
   overflow-x: scroll;
   margin: 0 5px;
-
 }
 .cardContainer::-webkit-scrollbar {
   display: none;
@@ -306,7 +305,7 @@ transform: scale(0.8);
   align-items: center;
   width: 100%;
 }
-.card_content  .titleAndReate .title {
+.card_content .titleAndReate .title {
   width: 90px;
   height: 8px;
   font-family: "Josefin Sans";
@@ -316,7 +315,7 @@ transform: scale(0.8);
   line-height: 8px;
   color: #3d3d3d;
 }
-.card_content  .titleAndReate .reate {
+.card_content .titleAndReate .reate {
   display: flex;
   gap: 2px;
   font-size: 13px;
@@ -327,7 +326,7 @@ transform: scale(0.8);
   max-width: 100%;
   height: 100.17px;
 }
-.card_content  .cities {
+.card_content .cities {
   margin: 0;
   font-family: "Josefin Sans";
   font-style: normal;
@@ -338,7 +337,7 @@ transform: scale(0.8);
   align-items: center;
   color: #3d3d3d;
 }
-.card_content  .days {
+.card_content .days {
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 700;
@@ -350,12 +349,12 @@ transform: scale(0.8);
   color: #3d3d3d;
 }
 .card_content .priceAndView {
-display: flex;
-justify-content: space-between;
-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .price span:nth-of-type(1) {
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 10.62698px;
@@ -363,107 +362,112 @@ width: 100%;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
-  color: #3D3D3D;
+  color: #3d3d3d;
   text-transform: capitalize;
 }
 .price span:nth-of-type(2) {
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 14.254px;
   line-height: 13px;
   display: flex;
   align-items: center;
-  color: #3D3D3D;
+  color: #3d3d3d;
   padding-top: 5px;
 }
-.card_content .priceAndView .viewBtn{
+.card_content .priceAndView .viewBtn {
   display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 8px;
-gap: 10px;
-width: 74px;
-height: 32px;
-background: #FFFFFF;
-border: 1px solid #DEDEDE;
-border-radius: 5px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 10px;
+  width: 74px;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 5px;
 }
-.card_content .priceAndView .viewBtn button{
-  font-family: 'Josefin Sans';
+.card_content .priceAndView .viewBtn button {
+  font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  color: #3D3D3D;
+  color: #3d3d3d;
 }
 /* section gallery  */
-.leftSide{
+.leftSide {
   padding-right: 0;
 }
-.rightSide{
+.rightSide {
   display: flex;
   flex-direction: column;
   gap: 11px;
 }
-.imagefull_H ,.imageRight{
+.imagefull_H,
+.imageRight {
   overflow: hidden;
   position: relative;
 }
-.imagefull_H  img{
+.imagefull_H img {
   max-width: 100%;
   width: 300px;
-  height: 200px; 
+  height: 200px;
   transition: ease-in-out 0.5s;
 }
-.imageRight  img{
-  max-width:100%;
+.imageRight img {
+  max-width: 100%;
   width: 250px;
   height: 95px;
   transition: ease-in-out 0.5s;
 }
-.imageRight .layout:hover + img , .imagefull_H  .layout:hover + img{
+.imageRight .layout:hover + img,
+.imagefull_H .layout:hover + img {
   transform: scale(1.3);
 }
-.imagefull_H .image_content ,.imageRight .image_content {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50% , -50%);
- z-index: 5;
+.imagefull_H .image_content,
+.imageRight .image_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
 }
-.imagefull_H .layout ,.imageRight .layout  {
- position: absolute;
- content: "";
- width: 100%;
-height: 100%;
-background-color: #00000033;
-top: 0 ;
-left: 0;
-z-index: 2;
+.imagefull_H .layout,
+.imageRight .layout {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #00000033;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
-.imagefull_H .image_content span ,.imageRight .image_content span {
-  font-family: 'Josefin Sans';
+.imagefull_H .image_content span,
+.imageRight .image_content span {
+  font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 11px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 /* secton review */
 .review_container {
   padding-top: 57px;
 }
-.review_box{
-  background: #FFFFFF;
-border: 0.491103px solid #DEDEDE;
-border-radius: 9.16144px;
-position: relative;
+.review_box {
+  background: #ffffff;
+  border: 0.491103px solid #dedede;
+  border-radius: 9.16144px;
+  position: relative;
 }
-.review{
+.review {
   padding: 41px 12px 12px;
 }
 .titelAndStar {
@@ -471,13 +475,13 @@ position: relative;
   justify-content: space-between;
   align-items: center;
 }
-.titelAndStar .titel  {
-  font-family: 'Josefin Sans';
+.titelAndStar .titel {
+  font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 14.6583px;
   line-height: 15px;
-  color: #3D3D3D;
+  color: #3d3d3d;
 }
 .titelAndStar .star {
   display: flex;
@@ -485,32 +489,32 @@ position: relative;
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  color: #FFE234;
+  color: #ffe234;
 }
-.review .place{
-  font-family: 'Josefin Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 12.2153px;
-line-height: 12px;
-letter-spacing: 0.03em;
-color: #3D3D3D;
+.review .place {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.2153px;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  color: #3d3d3d;
 }
-.review .review_content{
-  font-family: 'Roboto';
+.review .review_content {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 15px;
   letter-spacing: 0.0916144px;
-  color: #3D3D3D;
+  color: #3d3d3d;
 }
 .athorImage {
   position: absolute;
-    z-index: 20;
-    top: -36px;
-    left: 24px;
-    /* z-index: 30;
+  z-index: 20;
+  top: -36px;
+  left: 24px;
+  /* z-index: 30;
     width: 90px;
     height: 90px;
     background: white;
@@ -535,7 +539,7 @@ color: #3D3D3D;
   border: 1px solid;
   border-bottom-right-radius: 32px;
   border-top-right-radius: 43px;
-  border-color: #DEDEDE #DEDEDE transparent transparent;
+  border-color: #dedede #dedede transparent transparent;
   transform: rotate(135deg);
 }
 .review_box .athorImage::before {
@@ -563,87 +567,93 @@ color: #3D3D3D;
   border-top-right-radius: 20px;
   z-index: -1;
 } */
-.athorImage img{
-  max-width:100%;
-  width:60.92px;
+.athorImage img {
+  max-width: 100%;
+  width: 60.92px;
   height: 60.92px;
   border-radius: 50%;
-  border: 1.5px solid #01A8C3;
+  border: 1.5px solid #01a8c3;
 }
 /* 
 slider css
  */
- .swiper {
+.swiper {
   width: 100%;
-  height:auto;
+  height: auto;
 }
 .swiper {
   padding: 53px 0 30px !important;
 }
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-  bottom : -6px !important;
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -6px !important;
 }
-.btnAddReview{
+.btnAddReview {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
   padding: 10px;
-  background: #01A8C3;
+  background: #01a8c3;
   border-radius: 5px;
   width: 150px;
   margin: 30px auto 6px;
-  transition: ease-in-out 03.s;
+  transition: ease-in-out 03s;
 }
 .btnAddReview:hover {
- transform: scale(0.9);
+  transform: scale(0.9);
 }
-.btnAddReview button{
-  font-family: 'Josefin Sans';
+.btnAddReview button {
+  font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 12.1233px;
   line-height: 12px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
- /* faq section  */
- div#accordionExample {
+/* faq section  */
+div#accordionExample {
   display: flex;
   flex-direction: column;
   gap: 26px;
 }
-.accordion-button{
-  font-family: 'Josefin Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 12px;
-color: #3D3D3D;
-padding: 16px 10px;
+.accordion-button {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: #3d3d3d;
+  padding: 16px 10px;
 }
-.accordion-item{
-background: #F5F5F5;
-  
+.accordion-item {
+  background: #f5f5f5;
+  border-radius: 0.25rem !important;
+}
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
 }
 /* footer section */
-.footerSection{
- border-top: 1px solid #7A7A7A; 
- margin-top: 40px;
+.footerSection {
+  border-top: 1px solid #7a7a7a;
+  margin-top: 40px;
 }
-.footerSection .footer{
-padding: 24px 27px;
-display: flex;
-flex-direction: column;
-justify-content: center;
+.footerSection .footer {
+  padding: 24px 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.logoFooter img{
-     max-width: 100%;
-    width: 255px;
-    height: 106px;
-    border-radius: 50%;
-    cursor: pointer;
+.logoFooter img {
+  max-width: 100%;
+  width: 255px;
+  height: 106px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 .linksAndcontactUs {
   display: flex;
@@ -652,64 +662,64 @@ justify-content: center;
 }
 .footerLinks {
 }
-.links{
-  display: flex ;
+.links {
+  display: flex;
   width: 100px;
   flex-direction: column;
   gap: 8px;
   padding-left: 0;
 }
-.contactUsFooter{
+.contactUsFooter {
   display: flex;
   flex-direction: column;
-
 }
-.contactUsFooter div{
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-letter-spacing: 0.1px;
-color: #3D3D3D;
-
+.contactUsFooter div {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #3d3d3d;
 }
-.coutactUs{
+.coutactUs {
   padding-left: 0;
 }
 .links li {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 15px;
   letter-spacing: 0.5px;
-  color: #3D3D3D;
+  color: #3d3d3d;
 }
 .links li:hover {
- cursor: pointer;
+  cursor: pointer;
   color: #3d3d3dc9;
 }
 .coutactUs li span {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   display: flex;
   align-items: center;
   letter-spacing: 0.5px;
-  color: #3D3D3D;
-  word-break: break-all 
+  color: #3d3d3d;
+  word-break: break-all;
 }
 .coutactUs li {
-display: flex;
-gap: 8px;
-align-items: center;
-
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 .coutactUs li:hover span {
-color:#3d3d3dc9 ;
-cursor: pointer;
+  color: #3d3d3dc9;
+  cursor: pointer;
+}
+.privateImg {
+  height: auto !important;
 }
 /* .iconSocil{
   display: flex;
@@ -725,79 +735,79 @@ cursor: pointer;
 /* cpry right section  */
 .copyRightSection {
   display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: flex-start;
-padding: 18px 20px;
-gap: 30px;
-background: #3D3D3D;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 18px 20px;
+  gap: 30px;
+  background: #3d3d3d;
 }
 .copyRightSection div {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.4px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.accordion-button:not(.collapsed){
-  color: #3D3D3D !important; 
+.accordion-button:not(.collapsed) {
+  color: #3d3d3d !important;
 }
-.searchPlaceHolder input{
+.searchPlaceHolder input {
   padding: 11px 0px;
   border-radius: 8px;
   background: #ffffff;
-  border:0;
+  border: 0;
   border-radius: 10px;
   width: 100%;
 }
-.searchPlaceHolder input[type=text]{
- border: 0;
+.searchPlaceHolder input[type="text"] {
+  border: 0;
 }
-.searchPlaceHolder input:focus{
-outline: none;
+.searchPlaceHolder input:focus {
+  outline: none;
 }
-.searchPlaceHolder input::placeholder{
-  font-family: 'Roboto';
+.searchPlaceHolder input::placeholder {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  color: #B7B7B7;
+  color: #b7b7b7;
   text-align: center;
 }
 .dateFilter .content-search {
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 14px;
-  color: #3D3D3D;
+  color: #3d3d3d;
   cursor: pointer;
   text-align: center;
 }
 .buttonSearch {
   display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 8px 24px;
-width: 130px;
-background: #01A8C3;
-border-radius: 5px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  width: 130px;
+  background: #01a8c3;
+  border-radius: 5px;
 }
 .buttonSearch:hover {
- transform: scale(0.9);
+  transform: scale(0.9);
 }
 .buttonSearch button {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.5px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 /* responsev navbar */
 @media only screen and (max-width: 786px) {
@@ -885,12 +895,12 @@ border-radius: 5px;
     display: none;
   }
   .headerSection .header {
-   font-size: 20px;
+    font-size: 20px;
   }
   .headerSection .description {
     font-size: 24px;
     margin-top: 10px;
-}
+  }
 }
 
 /* responsev landing header */
@@ -899,7 +909,6 @@ border-radius: 5px;
     background-image: url("../image/Photo_larg.jpg");
     height: 500px;
     background-position: center;
-  
   }
   .landingPageContent {
     top: 50%;
@@ -918,128 +927,128 @@ border-radius: 5px;
 @media only screen and (min-width: 786px) {
   .card {
     min-width: 320px;
-
-}
-.image-container img {
-  width: 323px;
-  height: 162.17px;
-}
-.card_content .titleAndReate .title {
-  width: 125px;
-  font-size: 18px;
-}
-.card_content .titleAndReate .reate {
-  display: flex;
-  gap: 2px;
-  font-size: 17px;
-  color: #ffe234;
-}
-.card_content .cities {
-  font-size: 16px;
-}
-.card_content .days {
-  font-size: 16px;
-}
-.price span:nth-of-type(1) {
-  font-size: 13.62698px;
-  margin-top: 3px ;
-}
-.price span:nth-of-type(2) {
-  font-size: 19.254px;
-  margin-top: 4px;
-}
-.card_content .priceAndView .viewBtn button {
-  font-size: 17px;
-  line-height: 14px;
-}
-.card_content .priceAndView .viewBtn {
-  width: 106px;
-  height: 32px;
-}
+  }
+  .image-container img {
+    width: 323px;
+    height: 162.17px;
+  }
+  .card_content .titleAndReate .title {
+    width: 125px;
+    font-size: 18px;
+  }
+  .card_content .titleAndReate .reate {
+    display: flex;
+    gap: 2px;
+    font-size: 17px;
+    color: #ffe234;
+  }
+  .card_content .cities {
+    font-size: 16px;
+  }
+  .card_content .days {
+    font-size: 16px;
+  }
+  .price span:nth-of-type(1) {
+    font-size: 13.62698px;
+    margin-top: 3px;
+  }
+  .price span:nth-of-type(2) {
+    font-size: 19.254px;
+    margin-top: 4px;
+  }
+  .card_content .priceAndView .viewBtn button {
+    font-size: 17px;
+    line-height: 14px;
+  }
+  .card_content .priceAndView .viewBtn {
+    width: 106px;
+    height: 32px;
+  }
 }
 /* responsev section grallery  */
 @media only screen and (min-width: 786px) {
-  .gallary_container{
-   width: 85%;
-   margin:  0 auto;
+  .gallary_container {
+    width: 85%;
+    margin: 0 auto;
   }
-  .imagefull_H img  {
+  .imagefull_H img {
     width: 550px;
     height: 400px;
-}
-.rightSide{
-  height: 400px;
-  overflow: hidden;
-}
-.imageRight img {
-  max-width: 100%;
-  width: 550px;
-  height:195px ;
-  transition: ease-in-out 0.5s;
-}
-.imagefull_H .image_content span, .imageRight .image_content span {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 11px;
-  text-align: center;
-  color: #FFFFFF;
-}
+  }
+  .rightSide {
+    height: 400px;
+    overflow: hidden;
+  }
+  .imageRight img {
+    max-width: 100%;
+    width: 550px;
+    height: 195px;
+    transition: ease-in-out 0.5s;
+  }
+  .imagefull_H .image_content span,
+  .imageRight .image_content span {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 11px;
+    text-align: center;
+    color: #ffffff;
+  }
 }
 
 /* responsev arrow  */
 @media only screen and (max-width: 500px) {
- .rightArrow , .leftArrow{
-  display: none;
- }
+  .rightArrow,
+  .leftArrow {
+    display: none;
+  }
 }
 /* responsev review */
 @media only screen and (min-width: 786px) {
   .titelAndStar .titel {
     font-size: 19.6583px;
+  }
+  .review .place {
+    font-size: 16.2153px;
+  }
+  .review .review_content {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .btnAddReview {
+    padding: 14px;
+    width: 170px;
+  }
+  .btnAddReview button {
+    font-size: 18.1233px;
+  }
 }
-.review .place {
-  font-size: 16.2153px;
-}
-.review .review_content {
-  font-size: 22px;
-  line-height: 30px;
-}
-.btnAddReview {
-  padding: 14px;
-  width: 170px;
-}
-.btnAddReview button {
-  font-size: 18.1233px;
-}
- }
- 
- /* responsev Faq */
- @media only screen and (min-width: 768px) {
+
+/* responsev Faq */
+@media only screen and (min-width: 768px) {
   .accordion-button {
     font-size: 26px;
+  }
 }
- }
- /* responsev footer */
- @media only screen and (min-width: 768px) {
-  
+/* responsev footer */
+@media only screen and (min-width: 768px) {
   .footerSection .footer {
     padding: 24px 27px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+  }
+  .logoFooter {
+    width: 54%;
+  }
+  .logoFooter img {
+    max-width: 100%;
+    width: 387px;
+    height: 154px;
+    border-radius: 50%;
+  }
+  .searchPlaceHolder input::placeholder {
+    font-size: 16px;
+  }
 }
-.logoFooter {
-  width: 54%;
-}
-.logoFooter img {
-  max-width: 100%;
-  width: 387px;
-  height: 154px;
-  border-radius: 50%;
-}
-.searchPlaceHolder input::placeholder{
-  font-size: 16px;
-}
- }

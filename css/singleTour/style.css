@@ -1,7 +1,7 @@
 .carousel-caption.contentHeader {
   position: absolute;
   top: 156px;
-  left: 30px;
+  left: 14px;
 }
 .carousel-caption.contentHeader p {
   font-family: "Josefin Sans";
@@ -35,7 +35,7 @@
 }
 .tapsTour {
   background: #e5e5e5;
-  padding: 8px !important;
+  padding: 8px 8px 0 !important;
 }
 .layoutviews {
   display: none;
@@ -55,10 +55,11 @@
   justify-content: center;
   text-align: center;
   cursor: pointer;
-  padding: 12px 5px !important;
+  padding: 12px 5px 0 !important;
 }
 .tapsTour li.active {
   background: #ffffff;
+  height: 40px;
 }
 .video_container {
   height: 315px;
@@ -413,106 +414,105 @@ thead tr {
   gap: 20px;
   justify-content: center;
   padding: 10px;
-  background: #F5F5F5;
-  border-radius: 10px; 
+  background: #f5f5f5;
+  border-radius: 10px;
 }
 .formRview .header {
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 16px;
-    color: #3D3D3D;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3d3d3d;
 }
-.rateText{
-    font-family: 'Josefin Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 14px;
-color: #3D3D3D;
+.rateText {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #3d3d3d;
 }
-.rateStar{
-    background: #FFFFFF;
-    border: 1px solid #DEDEDE;
-    border-radius: 5px; 
+.rateStar {
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 5px;
 }
 /* rate star */
 .rate {
-    float: left;
-    height: 46px;
-    padding: 0 10px;
+  float: left;
+  height: 46px;
+  padding: 0 10px;
 }
 .rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
+  position: absolute;
+  top: -9999px;
 }
 .rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:30px;
-    color:#ccc;
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
 }
 .rate:not(:checked) > label:before {
-    content: '★ ';
+  content: "★ ";
 }
 .rate > input:checked ~ label {
-    color: #ffc700;    
+  color: #ffc700;
 }
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {
-    color: #FFE234;  
+  color: #ffe234;
 }
 .rate > input:checked + label:hover,
 .rate > input:checked + label:hover ~ label,
 .rate > input:checked ~ label:hover,
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
-    color: #c59b08;
+  color: #c59b08;
 }
 
 /* end rate star */
-.ReviewTitle{
-    font-family: 'Josefin Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 14px;
-color: #3D3D3D;
-
+.ReviewTitle {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #3d3d3d;
 }
-.recommend{
-    font-family: 'Josefin Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-color: #3D3D3D;
+.recommend {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3d3d3d;
 }
-.formRview  .buttomSubmit{
-    background: #01A8C3;
-    border-radius: 5px;
-    padding: 8px 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 140px;
-    margin:  0 auto;
-    cursor: pointer;
+.formRview .buttomSubmit {
+  background: #01a8c3;
+  border-radius: 5px;
+  padding: 8px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  margin: 0 auto;
+  cursor: pointer;
 }
-.formRview  .buttomSubmit:hover{
-   transform: scale(0.9);
+.formRview .buttomSubmit:hover {
+  transform: scale(0.9);
 }
-.formRview  .buttomSubmit button{
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 16px;
-    color: #FFFFFF;
+.formRview .buttomSubmit button {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
 }
 /* responsev singel tour */
 @media only screen and (min-width: 786px) {
@@ -550,7 +550,7 @@ color: #3D3D3D;
     padding: 25px 13px !important;
   }
   .content_overview {
-    ont-family: "Josefin Sans";
+    font-family: "Josefin Sans";
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -582,5 +582,9 @@ color: #3D3D3D;
   }
   .formRview {
     padding: 22px;
-}
+  }
+  .tapsTour li.active {
+    background: #ffffff;
+    height: 65px;
+  }
 }
