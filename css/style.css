@@ -721,6 +721,22 @@ div#accordionExample {
 .privateImg {
   height: auto !important;
 }
+.carousel-caption.contentHeader.sleiderHome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.carousel-caption.contentHeader.sleiderHome p {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  width: 300px;
+}
 /* .iconSocil{
   display: flex;
   justify-content: center;
@@ -1050,5 +1066,20 @@ div#accordionExample {
   }
   .searchPlaceHolder input::placeholder {
     font-size: 16px;
+  }
+  .carousel-caption.contentHeader.sleiderHome p {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
+    width: 750px;
+  }
+  .landingPageContent .but_landing button {
+    width: 124px;
+    height: 54px;
+    font-size: 16.1233px;
   }
 }
