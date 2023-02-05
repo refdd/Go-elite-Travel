@@ -1,6 +1,6 @@
 .searchSection {
   display: flex;
-  gap: 20px;
+  gap: 5px;
 }
 .contentfilterChackBox {
   font-family: "Josefin Sans";
@@ -17,6 +17,7 @@
   border-radius: 8px;
   padding: 16px;
   height: fit-content;
+  width: 47%;
 }
 .box_Sort {
   display: none;
@@ -80,6 +81,7 @@
   overflow: hidden;
   background: #ffffff;
   border-radius: 10.1028px 10.1028px;
+  box-shadow: 0px 2.02056px 2.02056px rgba(0, 0, 0, 0.1);
 }
 .cardList p {
   font-family: "Josefin Sans";

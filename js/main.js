@@ -14,21 +14,32 @@ const layoutviews = document.querySelectorAll(".layoutviews");
 const arrowFiltter = document.querySelector(".filterBox div .fa-arrow-down");
 const arrowSort = document.querySelector(".sortBox div .fa-arrow-down");
 const buttonDuration = document.querySelector(".buttonDuration");
-
+const fromInquery = document.getElementById("formInquery");
+const mobileButton = document.querySelector(".button_moblie");
+console.log(mobileButton);
 // event
-buttonDuration &&  buttonDuration.addEventListener("click", () => {
-  counderFilter.classList.toggle("active");
-});
+buttonDuration &&
+  buttonDuration.addEventListener("click", () => {
+    counderFilter.classList.toggle("active");
+  });
+// scroll to form position
+mobileButton &&
+  mobileButton.addEventListener("click", () => {
+    fromInquery.scrollIntoView({ behavior: "smooth" });
+    mobileButton.classList.add("close");
+  });
 // open and close  filter box and Sort box
-filterbutton && filterbutton.addEventListener("click", () => {
-  filter_Box.classList.toggle("active");
-  arrowFiltter.classList.toggle("rotate");
-});
+filterbutton &&
+  filterbutton.addEventListener("click", () => {
+    filter_Box.classList.toggle("active");
+    arrowFiltter.classList.toggle("rotate");
+  });
 
-sortbutton && sortbutton.addEventListener("click", () => {
-  box_Sort.classList.toggle("active");
-  arrowSort.classList.toggle("rotate");
-});
+sortbutton &&
+  sortbutton.addEventListener("click", () => {
+    box_Sort.classList.toggle("active");
+    arrowSort.classList.toggle("rotate");
+  });
 //
 menuIcon.addEventListener("click", () => {
   // remove menu icon and add  cancel icon
@@ -53,7 +64,6 @@ const handleClick = (direction) => {
 // taps tour function
 function add_and_remove_active_class() {
   //for in will not work with DOM elements
-  console.log(taptour);
   taptour.forEach((elem, i) => {
     elem.addEventListener("click", () => {
       // for (const lis of taptour) {
