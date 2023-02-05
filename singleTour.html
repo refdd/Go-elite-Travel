@@ -211,7 +211,7 @@
    </button>
     </div>
     <!-- taps section  -->
-    <div class="container-sm position-relative mb-3 mb-md-5">
+    <div class="container-sm position-relative  mb-5">
       <ul
         class="d-flex justify-content-center align-items-center gap-2 tapsTour"
       >
@@ -784,9 +784,9 @@
                               Adults
                             </span> 
                             <div class="counterContainer d-flex justify-content-between align-items-center gap-2 p-2 border rounded-3 ">
-                             <img src="image/Minus.svg" id="mins" alt="">
-                             <span class="number"> 0 </span>
-                             <img src="image/Plus.svg" id="plus" alt="">
+                             <img onclick="removeCounter('adults')"  src="image/Minus.svg" id="mins" alt="">
+                             <input id="adults" type="text" name="adults" class="form-control input-number book_all" value="0" min="1" max="100" readonly="">
+                             <img onclick="addCounter('adults')" src="image/Plus.svg" id="plus" alt="">
                             </div>
                             </div>
                             <div class="d-flex justify-content-between align-items-center w-100">
@@ -794,9 +794,9 @@
                               Children
                             </span> 
                             <div class="counterContainer d-flex justify-content-between align-items-center gap-2 p-2 border rounded-3 ">
-                             <img src="image/Minus.svg" id="mins" alt="">
-                             <span class="number"> 0 </span>
-                             <img src="image/Plus.svg" id="plus" alt="">
+                             <img  onclick="removeCounter('Children')" src="image/Minus.svg" id="mins" alt="">
+                             <input id="Children" type="text" name="Children" class="form-control input-number book_all" value="0" min="1" max="100" readonly="">
+                             <img onclick="addCounter('Children')" src="image/Plus.svg" id="plus" alt="">
                             </div>
                             </div>
                             <div class="d-flex justify-content-between align-items-center w-100">
@@ -804,9 +804,9 @@
                               Infants
                             </span> 
                             <div class="counterContainer d-flex justify-content-between align-items-center gap-2 p-2 border rounded-3 ">
-                             <img src="image/Minus.svg" id="mins" alt="">
-                             <span class="number"> 0 </span>
-                             <img src="image/Plus.svg" id="plus" alt="">
+                             <img onclick="removeCounter('Infants')" src="image/Minus.svg" id="mins" alt="">
+                             <input id="Infants" type="text" name="Infants" class="form-control input-number book_all" value="0" min="1" max="100" readonly="">
+                             <img onclick="addCounter('Infants')" src="image/Plus.svg" id="plus" alt="">
                             </div>
                             </div>
                             <!-- buton done -->

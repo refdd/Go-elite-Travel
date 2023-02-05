@@ -16,7 +16,11 @@ const arrowSort = document.querySelector(".sortBox div .fa-arrow-down");
 const buttonDuration = document.querySelector(".buttonDuration");
 const fromInquery = document.getElementById("formInquery");
 const mobileButton = document.querySelector(".button_moblie");
-console.log(mobileButton);
+const counterDate = document.querySelector(".inputCounter span");
+const buttoncounter = document.querySelector(".buttoncounter");
+const Infants = document.getElementById("Infants");
+const Children = document.getElementById("Children");
+const adults = document.getElementById("adults");
 // event
 buttonDuration &&
   buttonDuration.addEventListener("click", () => {
@@ -34,7 +38,12 @@ filterbutton &&
     filter_Box.classList.toggle("active");
     arrowFiltter.classList.toggle("rotate");
   });
-
+// close counter box
+buttoncounter &&
+  buttoncounter.addEventListener("click", () => {
+    counterbox.classList.remove("active");
+  });
+// open and clode sort box
 sortbutton &&
   sortbutton.addEventListener("click", () => {
     box_Sort.classList.toggle("active");
@@ -84,3 +93,47 @@ add_and_remove_active_class();
 inputCounter.addEventListener("click", () => {
   counterbox.classList.toggle("active");
 });
+// counter form inquire
+function updateText(value1, value2) {
+  counterDate.innerHTML = `${value1} adults, ${value2} children`;
+}
+// add
+function addCounter(type) {
+  if (type == "adults") {
+    adults.value++;
+  }
+  if (type == "Children") {
+    Children.value++;
+  }
+  if (type == "Infants") {
+    Infants.value++;
+  }
+  updateText(adults.value, Children.value);
+}
+
+// reomve
+function removeCounter(type) {
+  if (type == "adults") {
+    if (adults.value == 0) {
+      adults.value = 0;
+      aduitsValue = adults.value;
+    } else {
+      adults.value--;
+    }
+  }
+  if (type == "Children") {
+    if (Children.value == 0) {
+      Children.value = 0;
+    } else {
+      Children.value--;
+    }
+  }
+  if (type == "Infants") {
+    if (Infants.value == 0) {
+      Infants.value = 0;
+    } else {
+      Infants.value--;
+    }
+  }
+  updateText(adults.value, Children.value);
+}
