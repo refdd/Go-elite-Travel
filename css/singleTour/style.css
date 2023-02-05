@@ -3,6 +3,7 @@
   top: 156px;
   left: 14px;
 }
+
 .carousel-caption.contentHeader p {
   font-family: "Josefin Sans";
   font-style: normal;
@@ -522,6 +523,7 @@ thead tr {
   line-height: 16px;
   color: #ffffff;
 }
+
 /* responsev singel tour */
 @media only screen and (min-width: 786px) {
   .carousel-item img {
