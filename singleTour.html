@@ -34,21 +34,21 @@
   </head>
   <body>
     <div class="container-sm">
-      <nav class="nav_container">
+      <nav class="nav_container row flex-nowrap py-2">
         <!-- image  -->
-        <div class="imgae_logo">
+        <div class="imgae_logo col col-md-2">
           <img src="./image/Go Elite Logo 1.svg" alt="" />
         </div>
         <!-- links -->
-        <ul class="links_container">
+        <ul class="links_container col-md-7">
           <li class="active">
             <a href=""> Home </a>
           </li>
           <li>
-            <a href="/"> LUXURY EGYPT TOURS </a>
+            <a href="listTour.html"> LUXURY EGYPT TOURS </a>
           </li>
           <li>
-            <a href="/"> MOROCCO TOURS </a>
+            <a href="listTour.html">MOROCCO TOURS </a>
           </li>
           <li>
             <a href="/"> ABOUT US </a>
@@ -58,11 +58,11 @@
           </li>
         </ul>
         <!-- buttom inquery -->
-        <div class="buttom_inquri">
+        <div class="buttom_inquri col col-md-3">
           <button>inqueri</button>
         </div>
         <!-- menue bar icon  -->
-        <div class="menu_bar">
+        <div class="menu_bar col">
           <i
             class="fa fa-bars"
             aria-hidden="true"
@@ -79,16 +79,16 @@
         <!-- menue bar box -->
         <ul class="menu_container">
           <li class="active">
-            <a href="Go-elite-Travel"> Home </a>
+            <a href="/"> Home </a>
           </li>
           <li>
-            <a href="/"> LUXURY EGYPT TOURS </a>
+            <a href="listTour.html">LUXURY EGYPT TOURS </a>
           </li>
           <li>
-            <a href="/"> MOROCCO TOURS </a>
+            <a href="listTour.html">MOROCCO TOURS </a>
           </li>
           <li>
-            <a href="/"> MOROCCO TOURS </a>
+            <a href="listTour.html"> MOROCCO TOURS </a>
           </li>
           <li>
             <a href="/"> ABOUT US </a>
@@ -213,12 +213,12 @@
     <!-- taps section  -->
     <div class="container-sm position-relative  mb-5">
       <ul
-        class="d-flex justify-content-center align-items-center gap-2 tapsTour"
+        class=" row align-items-center gap-2 tapsTour"
       >
-        <li class="taptour active">Overview</li>
-        <li class="taptour">Itinerary</li>
-        <li class="taptour">Prices and Accommodation</li>
-        <li class="taptour">Trip Information</li>
+        <li class="taptour active col ">Overview</li>
+        <li class="taptour col ">Itinerary</li>
+        <li class="taptour col">Prices and Accommodation</li>
+        <li class="taptour col">Trip Information</li>
       </ul>
     </div>
     <!-- taps sction overview -->
@@ -227,8 +227,8 @@
         <div class="col-sm-12 col-md-9">
           <!-- overview -->
           <div class="layoutviews active ">
-            <div class="d-flex align-items-center flex-md-column  gap-2 ">
-              <div class="content_overview w-100 my-md-4">
+            <div class="row gap-2 ">
+              <div class="content_overview col col-md-12 my-md-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -237,21 +237,23 @@
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum
               </div>
-              <div class="w-100 rounded-3 overflow-hidden video_container">
+              <div class="col col-md-12 ">
+               <div class=" w-100  rounded-3 overflow-hidden  video_container">
                 <video
-                  class="w-100 h-100"
-                  src="image/video.mp4"
-                  autoplay
-                  loop
-                  muted
-                ></video>
+                class="w-100 h-100"
+                src="image/video.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+               </div>
               </div>
             </div>
           <!-- inclued and exCluded  -->
           <div class="row">
             <div class="col-12">
               <div class="header_included my-3">Included:</div>
-              <ul class="included_section d-flex flex-column gap-3">
+              <ul class="included_section row gap-3">
                 <li class="d-flex gap-2 align-items-center">
                   <i class="fa fa-check"></i>
                   <span>
@@ -305,7 +307,7 @@
             </div>
             <div class="col-12">
               <div class="header_included my-3">Included:</div>
-              <ul class="exincluded_section d-flex flex-column gap-3">
+              <ul class="exincluded_section row gap-3">
                 <li class="d-flex gap-2 align-items-center">
                   <img src="image/X.svg" alt="">
                   <span>
@@ -405,7 +407,6 @@
           </div>
         
         </div>
-       
         <div class="d-flex gap-3 align-items-center ">
           <div class="d-flex justify-content-center align-items-center p-3 rounded-circle stepItinerary">
             2
@@ -457,6 +458,99 @@
           id="collapseThree"
           class="accordion-collapse collapse"
           aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is
+           body</code>,
+            though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="d-flex gap-3 align-items-center ">
+          <div class="d-flex justify-content-center align-items-center p-3 rounded-circle stepItinerary">
+           4
+       </div>
+       <div class="accordion-item flex-grow-1 itineraryDay">
+        <h2 class="accordion-header" id="headingfour">
+          <button
+            class="accordion-button collapsed headerday"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFour"
+            aria-expanded="false"
+            aria-controls="collapseFour"
+          >
+          Day 4: Arrival in Cairo - Welcome to Egypt
+          </button>
+        </h2>
+        <div
+          id="collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingfour"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is
+           body</code>,
+            though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="d-flex gap-3 align-items-center ">
+          <div class="d-flex justify-content-center align-items-center p-3 rounded-circle stepItinerary">
+            5
+       </div>
+       <div class="accordion-item flex-grow-1 itineraryDay">
+        <h2 class="accordion-header" id="headingFive">
+          <button
+            class="accordion-button collapsed headerday"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFive"
+            aria-expanded="false"
+            aria-controls="collapseFive"
+          >
+          Day 5: Arrival in Cairo - Welcome to Egypt
+          </button>
+        </h2>
+        <div
+          id="collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingFive"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is
+           body</code>,
+            though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="d-flex gap-3 align-items-center ">
+          <div class="d-flex justify-content-center align-items-center p-3 rounded-circle stepItinerary">
+            6
+       </div>
+       <div class="accordion-item flex-grow-1 itineraryDay">
+        <h2 class="accordion-header" id="headingSix">
+          <button
+            class="accordion-button collapsed headerday"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseSix"
+            aria-expanded="false"
+            aria-controls="collapseSix"
+          >
+          Day 6: Arrival in Cairo - Welcome to Egypt
+          </button>
+        </h2>
+        <div
+          id="collapseSix"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingSix"
           data-bs-parent="#accordionExample"
         >
           <div class="accordion-body">
@@ -639,7 +733,7 @@
          </div>
 
          <!-- from review -->
-         <div class="formRview mt-5" >
+         <div class="formRview row mt-5" >
           <!-- header -->
          <div class="header">
           Leave a review!
@@ -722,12 +816,12 @@
              <div class="headerInquery text-center " >
               INQUIRE NOW
              </div> 
-             <div class="form_inquire d-flex flex-column gap-3 justify-content-center p-3">
+             <div class="form_inquire row gap-3 justify-content-center p-3">
              <!-- name and email -->
 
-              <div class="d-flex gap-2">
-                <input class="form-control" type="text" placeholder="Name" aria-label="Name example">
-                <input class="form-control" type="email" placeholder="Email" aria-label="Email example">
+              <div class="row gap-2">
+                <input class="form-control col " type="text" placeholder="Name" aria-label="Name example">
+                <input class="form-control " type="email" placeholder="Email" aria-label="Email example">
               </div>
               <!-- nationily -->
               <div>
@@ -955,61 +1049,63 @@
     <!-- footer section -->
     <div class="container-sm">
       <div class="footerSection">
-        <div class="footer">
+        <div class="footer row">
           <!-- logo footer -->
-          <div class="logoFooter">
+          <div class="logoFooter col">
             <img src="image/footeLogo.png" alt="" />
           </div>
-          <div class="linksAndcontactUs">
-            <!-- links -->
-            <div class="footerLinks">
-              <ul class="links">
-                <li>home</li>
-                <li>Luxury Egypt Tour</li>
-                <li>Dubai Tour</li>
-                <li>Morocco Tour</li>
-                <li>About Us</li>
-                <li>Blog</li>
-              </ul>
-            </div>
-            <!-- contact us footer -->
-            <div class="contactUsFooter">
-              <div>contact us</div>
-              <ul class="coutactUs">
-                <li class="">
-                  <div class="iconSocil">
-                    <img
-                      src="https://www.svgrepo.com/show/488278/mail.svg"
-                      width="15px"
-                      height="15px"
-                      alt=""
-                    />
-                  </div>
-                  <span> mohamedrefat@gmail.com</span>
-                </li>
-                <li class="">
-                  <div class="iconSocil">
-                    <img
-                      src="https://www.svgrepo.com/show/473600/facebook.svg"
-                      width="15px"
-                      height="15px"
-                      alt=""
-                    />
-                  </div>
-                  <span>Go Elite Club Travel</span>
-                </li>
-                <li class="">
-                  <div class="iconSocil">
-                    <img
-                      src="https://www.svgrepo.com/show/474324/instagram.svg"
-                      width="15px"
-                      height="15px"
-                      alt=""
-                    />
-                  </div>
-                  <span>goelite.club</span>
-                </li>
-              </ul>
+          <div class="linksAndcontactUs col">
+            <div class="row px-2">
+              <!-- links -->
+              <div class="footerLinks col-6">
+                <ul class="links">
+                  <li>home</li>
+                  <li>Luxury Egypt Tour</li>
+                  <li>Dubai Tour</li>
+                  <li>Morocco Tour</li>
+                  <li>About Us</li>
+                  <li>Blog</li>
+                </ul>
+              </div>
+              <!-- contact us footer -->
+              <div class="contactUsFooter col-6">
+                <div>contact us</div>
+                <ul class="coutactUs">
+                  <li class="">
+                    <div class="iconSocil">
+                      <img
+                        src="https://www.svgrepo.com/show/488278/mail.svg"
+                        width="15px"
+                        height="15px"
+                        alt=""
+                      />
+                    </div>
+                    <p>mohamedrefat@gmail.com</p>
+                  </li>
+                  <li class="">
+                    <div class="iconSocil">
+                      <img
+                        src="https://www.svgrepo.com/show/473600/facebook.svg"
+                        width="15px"
+                        height="15px"
+                        alt=""
+                      />
+                    </div>
+                    <span>Go Elite Club Travel</span>
+                  </li>
+                  <li class="">
+                    <div class="iconSocil">
+                      <img
+                        src="https://www.svgrepo.com/show/474324/instagram.svg"
+                        width="15px"
+                        height="15px"
+                        alt=""
+                      />
+                    </div>
+                    <span>goelite.club</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

@@ -17,10 +17,14 @@ const buttonDuration = document.querySelector(".buttonDuration");
 const fromInquery = document.getElementById("formInquery");
 const mobileButton = document.querySelector(".button_moblie");
 const counterDate = document.querySelector(".inputCounter span");
+const counterDateFilter = document.querySelector(".buttonDuration");
 const buttoncounter = document.querySelector(".buttoncounter");
 const Infants = document.getElementById("Infants");
 const Children = document.getElementById("Children");
 const adults = document.getElementById("adults");
+const InfantsFilter = document.getElementById("InfantsFilter");
+const ChildrenFilter = document.getElementById("ChildrenFilter");
+const adultsFilter = document.getElementById("adultsFilter");
 // event
 buttonDuration &&
   buttonDuration.addEventListener("click", () => {
@@ -90,9 +94,10 @@ function add_and_remove_active_class() {
 add_and_remove_active_class();
 // counter
 // frist open and close counter
-inputCounter.addEventListener("click", () => {
-  counterbox.classList.toggle("active");
-});
+inputCounter &&
+  inputCounter.addEventListener("click", () => {
+    counterbox.classList.toggle("active");
+  });
 // counter form inquire
 function updateText(value1, value2) {
   counterDate.innerHTML = `${value1} adults, ${value2} children`;
@@ -136,4 +141,65 @@ function removeCounter(type) {
     }
   }
   updateText(adults.value, Children.value);
+}
+// date
+$(function () {
+  $('input[name="daterange"]').daterangepicker(
+    {
+      opens: "left",
+    },
+    function (start, end, label) {
+      console.log(
+        "A new date selection was made: " +
+          start.format("YYYY-MM-DD") +
+          " to " +
+          end.format("YYYY-MM-DD")
+      );
+    }
+  );
+});
+
+// counter filter listToura
+// set value of counter
+function updateTextFilter(value1, value2) {
+  counterDateFilter.innerHTML = `${value1} adults, ${value2} children`;
+}
+// add
+function addCounterFilter(type) {
+  if (type == "adults") {
+    adultsFilter.value++;
+  }
+  if (type == "Children") {
+    ChildrenFilter.value++;
+  }
+  if (type == "Infants") {
+    InfantsFilter.value++;
+  }
+  updateTextFilter(adultsFilter.value, ChildrenFilter.value);
+}
+
+// reomve
+function removeCounter(type) {
+  if (type == "adults") {
+    if (adultsFilter.value == 0) {
+      adultsFilter.value = 0;
+    } else {
+      adultsFilter.value--;
+    }
+  }
+  if (type == "Children") {
+    if (ChildrenFilter.value == 0) {
+      ChildrenFilter.value = 0;
+    } else {
+      ChildrenFilter.value--;
+    }
+  }
+  if (type == "Infants") {
+    if (InfantsFilter.value == 0) {
+      InfantsFilter.value = 0;
+    } else {
+      InfantsFilter.value--;
+    }
+  }
+  updateTextFilter(adultsFilter.value, ChildrenFilter.value);
 }

@@ -19,6 +19,11 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,700&family=Roboto:ital,wght@0,300;0,900;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
 
     <link rel="stylesheet" href="css/listtours/style.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -33,21 +38,21 @@
   </head>
   <body>
     <div class="container-sm">
-      <nav class="nav_container">
+      <nav class="nav_container row flex-nowrap py-2">
         <!-- image  -->
-        <div class="imgae_logo">
+        <div class="imgae_logo col col-md-2">
           <img src="./image/Go Elite Logo 1.svg" alt="" />
         </div>
         <!-- links -->
-        <ul class="links_container">
+        <ul class="links_container col-md-7">
           <li class="active">
-            <a href="/"> Home </a>
+            <a href=""> Home </a>
           </li>
           <li>
-            <a href="/"> LUXURY EGYPT TOURS </a>
+            <a href="listTour.html"> LUXURY EGYPT TOURS </a>
           </li>
           <li>
-            <a href="/"> MOROCCO TOURS </a>
+            <a href="listTour.html">MOROCCO TOURS </a>
           </li>
           <li>
             <a href="/"> ABOUT US </a>
@@ -57,11 +62,11 @@
           </li>
         </ul>
         <!-- buttom inquery -->
-        <div class="buttom_inquri">
+        <div class="buttom_inquri col col-md-3">
           <button>inqueri</button>
         </div>
         <!-- menue bar icon  -->
-        <div class="menu_bar">
+        <div class="menu_bar col">
           <i
             class="fa fa-bars"
             aria-hidden="true"
@@ -78,16 +83,16 @@
         <!-- menue bar box -->
         <ul class="menu_container">
           <li class="active">
-            <a href=""> Home </a>
+            <a href="/"> Home </a>
           </li>
           <li>
-            <a href="/"> LUXURY EGYPT TOURS </a>
+            <a href="listTour.html">LUXURY EGYPT TOURS </a>
           </li>
           <li>
-            <a href="/"> MOROCCO TOURS </a>
+            <a href="listTour.html">MOROCCO TOURS </a>
           </li>
           <li>
-            <a href="/"> MOROCCO TOURS </a>
+            <a href="listTour.html"> MOROCCO TOURS </a>
           </li>
           <li>
             <a href="/"> ABOUT US </a>
@@ -130,33 +135,32 @@
         <div class="positonBox">
           <!-- layout desktop-->
           <div
-            class="filter_search align-items-center justify-content-center gap-5"
+            class="filter_search align-items-center justify-content-center row gap-3"
           >
             <!--date   -->
             <div
-              class="boxFilter_search dayBox d-flex gap-2 align-items-center justify-content-center"
+              class="boxFilter_search dayBox d-flex gap-2 align-items-center justify-content-center col"
             >
               <i class="fa fa-calendar"></i>
               <div class="contentbox d-flex gap-1 flex-column">
                 <span>Departing Between</span>
                 <input
                   type="text"
-                  placeholder="Feb 3 - Feb 12"
-                  onfocus="(this.type='date')"
-                  onblur="(this.type='text')"
+                  name="daterange"
+                  value="01/01/2018 - 01/15/2018"
                 />
               </div>
             </div>
             <!-- duration -->
             <div
-              class="boxFilter_search dayBox d-flex gap-2 align-items-center justify-content-center"
+              class="boxFilter_search dayBox d-flex gap-2 align-items-center justify-content-center col"
             >
               <i class="fa fa-clock"></i>
               <div class="contentbox d-flex gap-1 flex-column">
                 <span>Duration</span>
                 <div class="searchPlaceHolder">
                   <input
-                    type="text"
+                    type="number"
                     class="form-control"
                     placeholder="3 - 8 nights"
                     aria-label="First name"
@@ -166,7 +170,7 @@
             </div>
             <!-- duration -->
             <div
-              class="boxFilter_search dayBox d-flex gap-2 align-items-center justify-content-center"
+              class="boxFilter_search dayBox d-flex gap-2 align-items-center justify-content-center col"
             >
               <div
                 class="d-flex gap-2 align-items-center justify-content-center"
@@ -195,9 +199,14 @@
                       <div
                         class="counterContainer d-flex justify-content-between align-items-center gap-2 p-2 border rounded-3"
                       >
-                        <img src="image/Minus.svg" id="mins" alt="" />
+                        <img
+                          onclick="removeCounter('adults')"
+                          src="image/Minus.svg"
+                          id="mins"
+                          alt=""
+                        />
                         <input
-                          id="adults"
+                          id="adultsFilter"
                           type="text"
                           name="adults"
                           class="form-control input-number book_all"
@@ -206,7 +215,12 @@
                           max="100"
                           readonly=""
                         />
-                        <img src="image/Plus.svg" id="plus" alt="" />
+                        <img
+                          onclick="addCounterFilter('adults')"
+                          src="image/Plus.svg"
+                          id="plus"
+                          alt=""
+                        />
                       </div>
                     </div>
                     <div
@@ -216,9 +230,14 @@
                       <div
                         class="counterContainer d-flex justify-content-between align-items-center gap-2 p-2 border rounded-3"
                       >
-                        <img src="image/Minus.svg" id="mins" alt="" />
+                        <img
+                          onclick="removeCounter('Children')"
+                          src="image/Minus.svg"
+                          id="mins"
+                          alt=""
+                        />
                         <input
-                          id="Children"
+                          id="ChildrenFilter"
                           type="text"
                           name="Children"
                           class="form-control input-number book_all"
@@ -227,7 +246,12 @@
                           max="100"
                           readonly=""
                         />
-                        <img src="image/Plus.svg" id="plus" alt="" />
+                        <img
+                          onclick="addCounterFilter('Children')"
+                          src="image/Plus.svg"
+                          id="plus"
+                          alt=""
+                        />
                       </div>
                     </div>
                     <div
@@ -237,9 +261,14 @@
                       <div
                         class="counterContainer d-flex justify-content-between align-items-center gap-2 p-2 border rounded-3"
                       >
-                        <img src="image/Minus.svg" id="mins" alt="" />
+                        <img
+                          onclick="removeCounter('Infants')"
+                          src="image/Minus.svg"
+                          id="mins"
+                          alt=""
+                        />
                         <input
-                          id="Infants"
+                          id="InfantsFilter"
                           type="text"
                           name="Infants"
                           class="form-control input-number book_all"
@@ -248,7 +277,12 @@
                           max="100"
                           readonly=""
                         />
-                        <img src="image/Plus.svg" id="plus" alt="" />
+                        <img
+                          onclick="addCounterFilter('Infants')"
+                          src="image/Plus.svg"
+                          id="plus"
+                          alt=""
+                        />
                       </div>
                     </div>
                     <!-- buton done -->
@@ -263,7 +297,7 @@
             </div>
             <!--  sort By -->
             <div
-              class="boxFilter_search dayBox d-flex gap-2 align-items-center justify-content-center"
+              class="boxFilter_search dayBox d-flex gap-2 align-items-center justify-content-center col"
             >
               <div class="contentbox d-flex gap-1 flex-column">
                 <span>Sort by</span>
@@ -278,7 +312,7 @@
               </div>
             </div>
             <!-- button Search -->
-            <div class="buttonBox">
+            <div class="buttonBox col">
               <div class="buttonSearch">
                 <button>Search</button>
               </div>
@@ -475,7 +509,7 @@
           style="border-top: 1.5px solid #dedede"
         >
           <h6 class="headerFilter">Filter By</h6>
-          <ul class="d-flex flex-column gap-5 pl-0">
+          <ul class="row gap-4 pl-0">
             <li class="d-flex gap-3 align-content-center">
               <div class="form-check">
                 <input
@@ -623,7 +657,7 @@
           </ul>
         </div>
         <div class="col-sm-12 col-md-9">
-          <div class="d-flex flex-column gap-3 gap-md-5">
+          <div class="row gap-3 gap-md-5">
             <!-- card -->
             <a href="singleTour.html">
               <div class="d-flex cardList" style="cursor: pointer">
@@ -1261,61 +1295,63 @@
     <!-- footer section -->
     <div class="container-sm">
       <div class="footerSection">
-        <div class="footer">
+        <div class="footer row">
           <!-- logo footer -->
-          <div class="logoFooter">
+          <div class="logoFooter col">
             <img src="image/footeLogo.png" alt="" />
           </div>
-          <div class="linksAndcontactUs">
-            <!-- links -->
-            <div class="footerLinks">
-              <ul class="links">
-                <li>home</li>
-                <li>Luxury Egypt Tour</li>
-                <li>Dubai Tour</li>
-                <li>Morocco Tour</li>
-                <li>About Us</li>
-                <li>Blog</li>
-              </ul>
-            </div>
-            <!-- contact us footer -->
-            <div class="contactUsFooter">
-              <div>contact us</div>
-              <ul class="coutactUs">
-                <li class="">
-                  <div class="iconSocil">
-                    <img
-                      src="https://www.svgrepo.com/show/488278/mail.svg"
-                      width="15px"
-                      height="15px"
-                      alt=""
-                    />
-                  </div>
-                  <span> mohamedrefat@gmail.com</span>
-                </li>
-                <li class="">
-                  <div class="iconSocil">
-                    <img
-                      src="https://www.svgrepo.com/show/473600/facebook.svg"
-                      width="15px"
-                      height="15px"
-                      alt=""
-                    />
-                  </div>
-                  <span>Go Elite Club Travel</span>
-                </li>
-                <li class="">
-                  <div class="iconSocil">
-                    <img
-                      src="https://www.svgrepo.com/show/474324/instagram.svg"
-                      width="15px"
-                      height="15px"
-                      alt=""
-                    />
-                  </div>
-                  <span>goelite.club</span>
-                </li>
-              </ul>
+          <div class="linksAndcontactUs col">
+            <div class="row px-2">
+              <!-- links -->
+              <div class="footerLinks col-6">
+                <ul class="links">
+                  <li>home</li>
+                  <li>Luxury Egypt Tour</li>
+                  <li>Dubai Tour</li>
+                  <li>Morocco Tour</li>
+                  <li>About Us</li>
+                  <li>Blog</li>
+                </ul>
+              </div>
+              <!-- contact us footer -->
+              <div class="contactUsFooter col-6">
+                <div>contact us</div>
+                <ul class="coutactUs">
+                  <li class="">
+                    <div class="iconSocil">
+                      <img
+                        src="https://www.svgrepo.com/show/488278/mail.svg"
+                        width="15px"
+                        height="15px"
+                        alt=""
+                      />
+                    </div>
+                    <p>mohamedrefat@gmail.com</p>
+                  </li>
+                  <li class="">
+                    <div class="iconSocil">
+                      <img
+                        src="https://www.svgrepo.com/show/473600/facebook.svg"
+                        width="15px"
+                        height="15px"
+                        alt=""
+                      />
+                    </div>
+                    <span>Go Elite Club Travel</span>
+                  </li>
+                  <li class="">
+                    <div class="iconSocil">
+                      <img
+                        src="https://www.svgrepo.com/show/474324/instagram.svg"
+                        width="15px"
+                        height="15px"
+                        alt=""
+                      />
+                    </div>
+                    <span>goelite.club</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -1326,6 +1362,7 @@
       <div>Terms and Privacy Policy</div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -1352,8 +1389,20 @@
         },
       });
     </script>
-    <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

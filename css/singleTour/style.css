@@ -68,7 +68,7 @@
   height: 40px;
 }
 .video_container {
-  height: 315px;
+  height: 263px;
 }
 .video_container video {
   object-fit: cover;
@@ -558,8 +558,8 @@ thead tr {
     gap: 25px !important;
   }
   .tapsTour li {
-    font-size: 23px;
-    padding: 25px 13px !important;
+    font-size: 18px;
+    line-height: 17px;
   }
   .content_overview {
     font-family: "Josefin Sans";
